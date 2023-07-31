@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Color Code from Image</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark Grey Background Color */
+            color: #fff; /* White Text Color */
+        }
+        #imageContainer {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        #imageCanvas {
+            border: 1px solid #000;
+            max-width: 500px;
+            max-height: 500px;
+        }
+        #colorCodeDisplay {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Color Code from Image</h1>
+    <div id="imageContainer">
+        <input type="file" id="imageInput">
+        <canvas id="imageCanvas"></canvas>
+    </div>
+    <div id="instructions">Click on the image to get the color code of a specific point.</div>
+    <div id="colorCodeDisplay"></div>
+    <div id="errorMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
